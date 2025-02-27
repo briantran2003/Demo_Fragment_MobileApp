@@ -9,17 +9,39 @@
         android:id="@+id/navigation_home"
         android:name="com.example.fragment.ui.home.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
-
+        tools:layout="@layout/fragment_home">
+    <action
+    android:id="@+id/action_navigation_home_to_productDetailFragment"
+    app:destination="@id/productDetailFragment" />
+</fragment>
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.fragment.ui.dashboard.DashboardFragment"
-        android:label="Dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_cart"
+        android:name="com.example.fragment.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.fragment.ui.notifications.NotificationsFragment"
         android:label="Notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.fragment.ui.details.ProductDetailFragment"
+        android:label="Product Detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
+        <argument
+            android:name="image"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>

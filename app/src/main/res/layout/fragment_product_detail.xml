@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar với nút Quay lại -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:backgroundTint="#6200EE"
+        android:textColor="@android:color/white"
+        android:layout_gravity="start"/>
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:scaleType="centerInside" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp" />
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá: 0 VND"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingTop="5dp" />
+
+    <!-- Mô tả sản phẩm -->
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mô tả sản phẩm..."
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <!-- Nút thêm vào giỏ hàng -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào giỏ hàng"
+        android:backgroundTint="#6200EE"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
